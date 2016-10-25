@@ -22,7 +22,7 @@ class MySwitch
         $this->command = $command;
     }
 
-    public function pressSwitch()
+    public function buttonWasPressed()
     {
         $this->command->execute();
     }

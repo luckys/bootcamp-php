@@ -16,7 +16,7 @@ class RateTest extends \PHPUnit\Framework\TestCase
         $light = new Light('Luz del comedor');
         $lightOnCommand = new LightOnCommand($light);
         $switch = new MySwitch($lightOnCommand);
-        $switch->pressSwitch();
+        $switch->buttonWasPressed();
         $this->assertEquals('Luz del comedor Encendida', $light->getState());
     }
 
@@ -28,7 +28,7 @@ class RateTest extends \PHPUnit\Framework\TestCase
         $light = new Light('Luz del comedor');
         $lightOffCommand = new LightOffCommand($light);
         $switch = new MySwitch($lightOffCommand);
-        $switch->pressSwitch();
+        $switch->buttonWasPressed();
         $this->assertEquals('Luz del comedor Apagada', $light->getState());
     }
 }

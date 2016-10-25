@@ -21,6 +21,7 @@ class Light
     public function __construct($name)
     {
         $this->name = $name;
+        $this->setState('Apagada');
     }
 
     /**

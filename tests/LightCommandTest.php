@@ -6,7 +6,7 @@ use Bootcamp\Patterns\Command\LightOffCommand;
 use Bootcamp\Patterns\Command\LightOnCommand;
 use Bootcamp\Patterns\Command\MySwitch;
 
-class RateTest extends \PHPUnit\Framework\TestCase
+class LightCommandTest extends \PHPUnit\Framework\TestCase
 {
     /**
      * @test
